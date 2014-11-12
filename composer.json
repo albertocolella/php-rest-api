@@ -1,0 +1,44 @@
+{
+    "name": "alberto.colella/rest-engine",
+    "type": "library",
+    "description": "Rest Engine",
+    "keywords": ["rest"],
+    "homepage": "https://github.com/kongoji6/tc",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alberto Colella",
+            "email": "kongoji@gmail.com",
+            "homepage": "http://albertocolella.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/kongoji6/php-rest-api.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.3.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TcRest\\": "src/"
+        },
+        "classmap": [
+            "src/controllers",
+            "src/lib",
+            "src/models",
+            "src/views"
+        ]
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "TcRest\\": "src/",
+            "TcRest\\tests\\": "tests/"
+        }
+    }
+}
